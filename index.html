@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Editkaro.in — Video Editing & Social Media Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="logo">edit<em>karo</em>.in</a>
+  <ul class="nav-links">
+    <li><a href="#work">Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+  </ul>
+  <button class="hamburger" id="ham" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mob-menu" id="mobMenu">
+  <a href="#work"     onclick="closeMob()">Work</a>
+  <a href="#services" onclick="closeMob()">Services</a>
+  <a href="#process"  onclick="closeMob()">Process</a>
+  <a href="#contact"  onclick="closeMob()">Get a Quote</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+
+  <!-- floating blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <div class="hero-inner">
+
+    <div class="hero-eyebrow">
+      <span class="dot"></span>
+      Available for new projects
+    </div>
+
+    <h1 class="hero-h1">
+      We edit videos<br/>
+      <span class="stroke-text">people actually</span><br/>
+      finish watching.
+    </h1>
+
+    <p class="hero-desc">
+      Editkaro.in is a video editing &amp; social media agency from India.
+      We've helped 120+ brands tell stories that stick — on Reels,
+      YouTube, and everywhere in between.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#work" class="btn-primary">See our work</a>
+      <a href="#contact" class="btn-link">Talk to us →</a>
+    </div>
+
+    <!-- social proof strip -->
+    <div class="proof-strip">
+      <div class="proof-item">
+        <span class="proof-n">500<sup>+</sup></span>
+        <span class="proof-l">videos edited</span>
+      </div>
+      <div class="proof-sep"></div>
+      <div class="proof-item">
+        <span class="proof-n">120<sup>+</sup></span>
+        <span class="proof-l">happy clients</span>
+      </div>
+      <div class="proof-sep"></div>
+      <div class="proof-item">
+        <span class="proof-n">4 yr</span>
+        <span class="proof-l">in the game</span>
+      </div>
+      <div class="proof-sep"></div>
+      <div class="proof-item">
+        <span class="proof-n">9</span>
+        <span class="proof-l">specialties</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- reel preview window -->
+  <div class="reel-window">
+    <div class="reel-bar">
+      <span class="reel-dot r"></span>
+      <span class="reel-dot y"></span>
+      <span class="reel-dot g"></span>
+      <span class="reel-label">latest_reel_v3_FINAL.mp4</span>
+    </div>
+    <div class="reel-screen">
+      <div class="reel-play">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+      <div class="reel-overlay-text">
+        <span class="tag-pill">Short-Form</span>
+        <p class="reel-title">Brand Reel Pack — 0:45</p>
+        <p class="reel-views">▶ 2.1M views</p>
+      </div>
+      <img
+        src="https://img.youtube.com/vi/5O0YDHiosD0/hqdefault.jpg"
+        alt="Brand reel preview"
+        onerror="this.src='https://placehold.co/640x360/111827/4B5563?text=Editkaro.in'"
+      />
+    </div>
+    <div class="reel-timeline">
+      <div class="reel-bar-prog"></div>
+    </div>
+  </div>
+
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="mq-track" id="mqTrack"></div>
+</div>
+
+<!-- WORK -->
+<section class="section" id="work">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-eyebrow">Portfolio</span>
+      <h2 class="sec-h">Work that speaks<br/>for itself.</h2>
+      <p class="sec-sub">Real edits, real platforms, real results. Click any card to watch on YouTube.</p>
+    </div>
+    <div class="filter-wrap reveal" id="filterWrap"></div>
+    <div class="grid" id="videoGrid"></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section section-alt" id="services">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-eyebrow">What we do</span>
+      <h2 class="sec-h">Every format.<br/>Every platform.</h2>
+      <p class="sec-sub">Nine specialties, one team — we know what performs where because we've shipped thousands of pieces.</p>
+    </div>
+    <div class="svc-grid" id="svcGrid"></div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="sec-eyebrow">How it works</span>
+      <h2 class="sec-h">From raw footage<br/>to ready-to-post.</h2>
+      <p class="sec-sub">A clean pipeline that keeps you informed without slowing things down.</p>
+    </div>
+    <div class="proc-grid reveal" id="procGrid"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="cta-box reveal">
+      <span class="sec-eyebrow">Let's create together</span>
+      <h2 class="cta-h">Got a project in mind?</h2>
+      <p class="cta-p">
+        Tell us your platform, your audience, and what you're going for.
+        We'll make it happen — and deliver fast.
+      </p>
+      <div class="cta-actions">
+        <a href="mailto:hello@editkaro.in" class="btn-primary">✉ Email us</a>
+        <a href="https://wa.me/919999999999" target="_blank" class="btn-secondary">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-inner">
+    <div class="foot-brand">
+      <a href="#" class="logo">edit<em>karo</em>.in</a>
+      <p>We turn raw footage into stories people actually finish watching. Based in India. Working everywhere.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="#work">Portfolio</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Follow us</h4>
+      <ul>
+        <li><a href="#" target="_blank">Instagram</a></li>
+        <li><a href="#" target="_blank">YouTube</a></li>
+        <li><a href="#" target="_blank">LinkedIn</a></li>
+        <li><a href="#" target="_blank">Twitter / X</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-copy">
+    <span>© 2025 Editkaro.in · All rights reserved.</span>
+    <span>Video Editing & Social Media Agency</span>
+  </div>
+</footer>
+
+<!-- VIDEO MODAL -->
+<div class="modal-bg" id="modal">
+  <div class="modal-box">
+    <div class="modal-top">
+      <span class="modal-label">▶ Now Playing</span>
+      <button class="modal-close" id="modalClose">✕ Close</button>
+    </div>
+    <div class="modal-iframe-wrap" id="modalVideo"></div>
+    <div class="modal-footer">
+      <span class="modal-title" id="modalTitle"></span>
+      <span class="modal-cat" id="modalCat"></span>
+    </div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
